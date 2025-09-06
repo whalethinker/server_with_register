@@ -1,6 +1,6 @@
 module github.com/whalethinker/server_with_register
 
-go 1.24.6
+go 1.24.5
 
 require (
 	github.com/cloudwego/hertz v0.10.2
