@@ -10,6 +10,7 @@ import (
 
 func Call(path string, method string, headers map[string]string, params map[string]string, body string) ([]byte, error) {
 	client := &http.Client{}
+
 	urlVal, err := url.Parse(path)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to parse url")
